@@ -3,13 +3,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/flask-jenkins-demo'
+        IMAGE_NAME = 'novac28/learningjenkins'
     }
 
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/yourusername/flask-jenkins-docker-demo.git'
+                git 'https://github.com/Novac-DevOps/LearningJenkins.git'
             }
         }
 
